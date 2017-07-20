@@ -27,6 +27,7 @@ app.displayAllandBuy = () => {
         department_name: v.department_name,
         price: v.price,
         stock_quantity: v.stock_quantity,
+        product_sales: v.product_sales
       }
     })
     console.table(app.items);
@@ -53,11 +54,15 @@ app.buy = () => {
   }]).then((res1) => {
     var oldQuantity = app.items.filter((v) => (v.item_id == res1.item_id))[0].stock_quantity;
     var itemPrice = app.items.filter((v) => (v.item_id == res1.item_id))[0].price;
+    var oldSales = app.items.filter((v) => (v.item_id == res1.item_id))[0].product_sales;
     if (res1.quantity > oldQuantity){
       console.log('Insufficient quantity in stock!')
       app.displayAllandBuy();  
     } else {
-      connection.query(`UPDATE products SET stock_quantity = '${oldQuantity - res1.quantity}' WHERE item_id = ${res1.item_id}`, (err, res2) => {
+      connection.query(`UPDATE products SET ? WHERE item_id = ${res1.item_id}`, {
+        stock_quantity: oldQuantity - parseInt(res1.quantity),
+        product_sales: oldSales + (itemPrice * parseInt(res1.quantity)) 
+      }, (err, res2) => {
         if (err) throw err;
         console.log(`Purchase Successful! You spent ${itemPrice * res1.quantity}`);
         app.displayAllandBuy();
