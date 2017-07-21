@@ -32,7 +32,7 @@ app.action= () => {
 }
 
 app.salesByDept = () => {
-  var queryStr= 'SELECT department_id, departments.department_name, over_head_costs, dept_sales.department_sales, '; 
+  var queryStr= 'SELECT department_id, departments.department_name, over_head_costs, IFNULL(dept_sales.department_sales, 0) AS department_sales, '; 
   queryStr += '(dept_sales.department_sales - over_head_costs) AS profit ';  
   queryStr += 'FROM departments LEFT JOIN ';
   queryStr += '(SELECT SUM(product_sales) AS department_sales, products.department_name FROM products GROUP BY department_name) '
