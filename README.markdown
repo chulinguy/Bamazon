@@ -33,9 +33,11 @@ module.exports = ['your password as a string']
 ## BamazonCustomer.js
 
 **Step 1 : Welcome screen**
-![Step1](../../images/customer-1.jpg)
+
+![Step1](images/customer-1.jpg)
 
 **Step 2: Choose what to buy and how many to buy**
+
 ![Step2](../../images/customer-2.jpg)
 
 
