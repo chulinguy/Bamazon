@@ -34,11 +34,11 @@ module.exports = ['your password as a string']
 
 **Step 1 : Welcome screen**
 
-![Step1](../../blob/master/images/customer-1.jpg)
+![Step1](https://github.com/chulinguy/Bamazon/blob/master/images/customer-1.JPG)
 
 **Step 2: Choose what to buy and how many to buy**
 
-![Step2](../../blob/master/images/customer-2.jpg)
+![Step2](https://github.com/chulinguy/Bamazon/blob/master/images/customer-2.JPG)
 
 ## BamazonManager.js
 
@@ -48,7 +48,15 @@ module.exports = ['your password as a string']
 
 **OPTION 1: Choose to see current inventory**
 
-![Step2](../../blob/master/images/manager-2.jpg)
+![Option 1](../../blob/master/images/manager-2.jpg)
+
+**OPTION 2: Choose to see items that are low in inventory (less than five in stock)**
+
+![Option 2](../../blob/master/images/manager-3.jpg)
+
+**OPTION 2: Restock items**
+
+![Option 2](../../blob/master/images/manager-4.jpg)
 
 ## Author
 
