@@ -44,19 +44,38 @@ module.exports = ['your password as a string']
 
 **Step 1 : Welcome screen**
 
-![Step1](../../blob/master/images/manager-1.jpg)
+![Step1](https://github.com/chulinguy/Bamazon/blob/master/images/manager-1.JPG)
 
 **OPTION 1: Choose to see current inventory**
 
-![Option 1](../../blob/master/images/manager-2.jpg)
+![Option 1](https://github.com/chulinguy/Bamazon/blob/master/images/manager-2.JPG)
 
 **OPTION 2: Choose to see items that are low in inventory (less than five in stock)**
 
-![Option 2](../../blob/master/images/manager-3.jpg)
+![Option 2](https://github.com/chulinguy/Bamazon/blob/master/images/manager-3.JPG)
 
-**OPTION 2: Restock items**
+**OPTION 3: Restock items by choosing an item's id and how many to restock**
 
-![Option 2](../../blob/master/images/manager-4.jpg)
+![Option 3](https://github.com/chulinguy/Bamazon/blob/master/images/manager-4.JPG)
+
+**OPTION 4: Create a new item by entering its product name, department name, price, and how many to stock**
+
+![Option 4](https://github.com/chulinguy/Bamazon/blob/master/images/manager-5.JPG)
+
+## BamazonSupervisor.js
+
+**Step 1 : Welcome screen**
+
+![Step1](https://github.com/chulinguy/Bamazon/blob/master/images/supervisor-1.JPG)
+
+**OPTION 1: Choose to see product sales by department**
+
+![Option 1](https://github.com/chulinguy/Bamazon/blob/master/images/supervisor-2.JPG)
+
+**OPTION 2: Choose to create a new department**
+
+![Option 2](https://github.com/chulinguy/Bamazon/blob/master/images/supervisor-3.JPG)
+
 
 ## Author
 
