@@ -34,13 +34,21 @@ module.exports = ['your password as a string']
 
 **Step 1 : Welcome screen**
 
-![Step1](images/customer-1.jpg)
+![Step1](../../blob/master/images/customer-1.jpg)
 
 **Step 2: Choose what to buy and how many to buy**
 
-![Step2](../../images/customer-2.jpg)
+![Step2](../../blob/master/images/customer-2.jpg)
 
+## BamazonManager.js
 
+**Step 1 : Welcome screen**
+
+![Step1](../../blob/master/images/manager-1.jpg)
+
+**OPTION 1: Choose to see current inventory**
+
+![Step2](../../blob/master/images/manager-2.jpg)
 
 ## Author
 
